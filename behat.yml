@@ -1,0 +1,28 @@
+# behat.yml
+
+default:
+  autoload:
+      '': %paths.base%/support/context
+  gherkin:
+      filters:
+        tags: ~@wip
+  suites:
+      default:
+        paths:    [ %paths.base%/support/features ]
+        contexts: [ FeatureContext]
+  extensions:
+    Laracasts\Behat:
+        env_path: support/config/.env.behat
+    Behat\MinkExtension:
+        default_session: laravel
+        base_url: http://localhost:8000
+        laravel: ~
+    SensioLabs\Behat\PageObjectExtension:
+        namespaces:
+          page: [Page]
+          element: [Page\Element]
+    BehatResources\ResourceExtension:
+        path:
+          base: %paths.base%/support/context
+        resource_map:
+          User: App\Bridge\Eloquent\Model\User

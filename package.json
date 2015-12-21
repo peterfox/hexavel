@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "dependencies": {
+    "laravel-elixir": "git+https://github.com/peterfox/elixir.git#feature/behat",
+    "bootstrap-sass": "^3.0.0",
+    "gulp": "^3.8.8"
+  }
+}

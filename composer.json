@@ -1,0 +1,56 @@
+{
+    "name": "peterfox/hexavel",
+    "description": "The Hexavel Framework",
+    "keywords": ["framework", "laravel", "hexavel"],
+    "license": "private",
+    "version": "5.2.0",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "peterfox/hexavel-components": "1.1.*"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpspec/phpspec": "~2.3",
+        "behat/behat": "^3.0",
+        "sensiolabs/behat-page-object-extension": "2.0.x-dev@dev",
+        "peterfox/hexavel-behat": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "classmap": [
+            "support/database"
+        ],
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\": "support/spec/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php bin/artisan clear-compiled",
+            "php bin/artisan optimize"
+        ],
+        "pre-update-cmd": [
+            "php bin/artisan clear-compiled"
+        ],
+        "post-update-cmd": [
+            "php bin/artisan optimize"
+        ],
+        "post-root-package-install": [
+            "php -r \"copy('support/config/.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php bin/artisan key:generate"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "bin-dir": "bin"
+    }
+}

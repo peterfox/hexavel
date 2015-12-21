@@ -1,0 +1,8 @@
+#phpspec.yml
+
+suites:
+    main:
+        namespace: App
+        psr4_prefix: App
+        src_path: src/
+        spec_path: support/
