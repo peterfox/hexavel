@@ -148,6 +148,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Hexavel\Support\Providers\NameCommandProvider::class,
+        Hexavel\Support\Providers\MakeCommandProvider::class,
 
         /*
          * Application Service Providers...

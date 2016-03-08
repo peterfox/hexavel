@@ -7,7 +7,7 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "peterfox/hexavel-components": "1.1.*"
+        "peterfox/hexavel-components": "1.2.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
