@@ -36,10 +36,8 @@
             "php bin/artisan clear-compiled",
             "php bin/artisan optimize"
         ],
-        "pre-update-cmd": [
-            "php bin/artisan clear-compiled"
-        ],
         "post-update-cmd": [
+            "php bin/artisan clear-compiled",
             "php bin/artisan optimize"
         ],
         "post-root-package-install": [
