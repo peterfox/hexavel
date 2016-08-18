@@ -2,7 +2,7 @@
     "name": "peterfox/hexavel",
     "description": "The Hexavel Framework",
     "keywords": ["framework", "laravel", "hexavel"],
-    "license": "private",
+    "license": "proprietary",
     "version": "5.2.0",
     "type": "project",
     "require": {
