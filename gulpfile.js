@@ -1,10 +1,6 @@
-var elixir = require('laravel-elixir');
-elixir.config.appPath = "src";
-elixir.config.viewPath = "support/resources/views";
-elixir.config.phpBinPath = "bin";
-elixir.config.assetsPath = "support/resources/assets/";
-elixir.config.testing.phpSpec.path = "support/spec";
-elixir.config.testing.behat.path = "support/features";
+const elixir = require('laravel-elixir');
+require('laravel-elixir-vue');
+require('hexavel-elixir-config');
 
 /*
  |--------------------------------------------------------------------------
@@ -17,8 +13,9 @@ elixir.config.testing.behat.path = "support/features";
  |
  */
 
-elixir(function(mix) {
-    mix.sass('app.scss');
+elixir(mix => {
+    mix.sass('app.scss')
+    .webpack('app.js');
 });
 
 /*
@@ -32,10 +29,10 @@ elixir(function(mix) {
  |
  */
 
-elixir(function(mix) {
+elixir(mix => {
     mix.phpSpec();
 });
 
-elixir(function(mix) {
+elixir(mix => {
     mix.behat();
 });
