@@ -30,7 +30,7 @@ This is where our base PHP application code goes using the default namespace \Ap
 
 #### Application (app)
 
-For the moment this simply stores our applications configs and routing file.
+For the moment this simply stores our applications configs and routing files.
 
 #### Support
 
