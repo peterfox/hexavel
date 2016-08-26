@@ -37,6 +37,9 @@ For the moment this simply stores our applications configs and routing files.
 This is our biggest change from Laravel. Support is how it sounds, a directory for all files that support the 
 development of our application. This covers views, assets, language files, tests and migrations by default.
 
+There is also a support packages folder which is the suggested place for local packages you might be developing
+or sit as part of your project to be loaded via composer.
+
 #### Variable (var)
 
 Variable directory is effectively our application writable directory. All caches and data written by the application
