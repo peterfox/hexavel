@@ -150,3 +150,16 @@ as a way of managing the interactions with your application for testing via Beha
 Class specs are stored in support/spec they can be created simply by using the 
 phpspec command `bin/phpspec desc <Namespace\\Class>` and then you can call `bin/phpspec run`
 or `gulp phpSpec` to perform the tests.
+
+## Warnings
+
+Not all packages made for Laravel will work out of the box with Hexavel. Most will except if they install code into
+your project. Laravel Spark is an example of this when it uses a number of stubs and adds assets etc.
+
+## Other Resources
+
+* [Hexavel Spark](https://github.com/peterfox/hexavel-spark)is a package for making Spark compatible with Hexavel due to 
+the install of stubs.
+* [Hexavel Components](https://github.com/peterfox/hexavel-components)sits between Laravel Framework 
+and Hexavel.
+* [Hexavel Behat](https://github.com/peterfox/hexavel-behat)holds the contexts that sets up Behat for Hexavel.
