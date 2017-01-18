@@ -1,5 +1,7 @@
 # Hexavel Framework
 
+[![Join the chat at https://gitter.im/peterfox/hexavel](https://badges.gitter.im/peterfox/hexavel.svg)](https://gitter.im/peterfox/hexavel?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Hexavel is a restructured version of [Laravel](http://laravel.com), with the purpose of providing better work flows which
 will simplify the development process.
 
